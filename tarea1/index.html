@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue Web - Programas Refactorizados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>DESAFIO  PROGRAMAS EN JAVASCRIPT</h1>
+        <p>Seleccione los ejercicios de cada area para comenzar.</p>
+    </header>
+
+    <nav id="menu-areas">
+        <div class="area-group">
+            <button class="area-btn" data-area="astronomia" onclick="mostrarSubmenu('astronomia')">🔭 Astronomía</button>
+            <img src="img/astronomia.jpg" alt="Icono de Astronomía" class="area-icon">
+        </div>
+
+        <div class="area-group">
+            <button class="area-btn" data-area="medioambiente" onclick="mostrarSubmenu('medioambiente')">🌳 Medio Ambiente</button>
+            <img src="img/medio ambiente.jpg" alt="Icono de Medio Ambiente" class="area-icon">
+        </div>
+
+        <div class="area-group">
+            <button class="area-btn" data-area="salud" onclick="mostrarSubmenu('salud')">⚕️ Salud</button>
+            <img src="img/salud.jpg" alt="Icono de Salud" class="area-icon">
+        </div>
+    </nav>
+    
+    <nav id="submenu-ejercicios" style="display: none;"></nav>
+
+    <main id="contenido-ejercicio">
+        <section id="seccion-inicio" class="ejercicio-activo">
+            <h2>Eige el Tema de tu interes</h2>
+            <p>Selecciona uno de los tres botones de arriba para ver los ejercicios de esa área.</p>
+            <p><strong>Cada boton tiene sus propios ejercicios</strong></p>
+        </section>
+
+        <section id="astronomia-1" class="ejercicio-contenedor"></section>
+        <section id="astronomia-2" class="ejercicio-contenedor"></section>
+        <section id="astronomia-3" class="ejercicio-contenedor"></section>
+        <section id="astronomia-4" class="ejercicio-contenedor"></section>
+        <section id="astronomia-5" class="ejercicio-contenedor"></section>
+        
+        <section id="medioambiente-1" class="ejercicio-contenedor"></section>
+        <section id="medioambiente-2" class="ejercicio-contenedor"></section>
+        <section id="medioambiente-3" class="ejercicio-contenedor"></section>
+        <section id="medioambiente-4" class="ejercicio-contenedor"></section>
+        <section id="medioambiente-5" class="ejercicio-contenedor"></section>
+        
+        <section id="salud-1" class="ejercicio-contenedor"></section>
+        <section id="salud-2" class="ejercicio-contenedor"></section>
+        <section id="salud-3" class="ejercicio-contenedor"></section>
+        <section id="salud-4" class="ejercicio-contenedor"></section>
+        <section id="salud-5" class="ejercicio-contenedor"></section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

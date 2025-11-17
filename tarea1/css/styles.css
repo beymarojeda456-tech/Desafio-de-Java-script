@@ -1,0 +1,180 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; 
+    color: #e0e0e0; 
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+    border-bottom: 2px solid #00FFFF;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #00FFCC; 
+}
+
+#menu-areas {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.area-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 20px; 
+}
+
+#menu-areas .area-btn {
+    background-color: #00FFCC; 
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #00FFCC, 0 0 15px #00FFCC, 0 0 25px #00FFCC;
+    border: 1px solid #00FFCC;
+}
+
+#menu-areas .area-btn:hover {
+    background-color: #00FFFF;
+    color: black;
+    box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 40px #00FFFF;
+    transform: scale(1.05);
+}
+
+.area-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, inset 0 0 5px #FF00FF; 
+    border: 1px solid #FF00FF;
+    object-fit: cover;
+}
+
+#submenu-ejercicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #1a1a1a;
+    padding: 15px 0; 
+    border-bottom: 2px solid #333;
+}
+
+#submenu-ejercicios button {
+    background-color: #333;
+    color: #FF66FF; 
+    border: 1px solid #FF66FF;
+    padding: 10px 15px;
+    margin: 5px 0; 
+    width: 90%; 
+    max-width: 500px; 
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 1em;
+    box-shadow: 0 0 3px #FF66FF; 
+}
+
+#submenu-ejercicios button:hover {
+    background-color: #222;
+    box-shadow: 0 0 8px #FF66FF, 0 0 15px #FF66FF;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #222;
+    box-shadow: 0 0 10px #00FFFF;
+    border-radius: 8px;
+}
+
+.ejercicio-contenedor {
+    display: none;
+    padding: 20px;
+    border: 1px dashed #FF66FF;
+    border-radius: 5px;
+}
+
+.ejercicio-activo {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00FFCC;
+}
+
+input[type="number"], input[type="text"], select {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+button[type="button"] {
+    background-color: #FF00FF;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-right: 10px;
+    box-shadow: 0 0 5px #FF00FF;
+    font-weight: bold;
+}
+
+button[type="button"]:hover {
+    background-color: #FF66FF;
+    box-shadow: 0 0 10px #FF66FF;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 5px solid #00FFFF;
+    background-color: #2e2e2e;
+    font-size: 1.1em;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.plus {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333333; 
+    color: #FF00FF;
+    border: 1px dashed #FF00FF;
+    border-radius: 4px;
+}
+
+.alerta {
+    color: #FF0000;
+    font-weight: bold;
+    text-shadow: 0 0 3px #FF0000;
+}
